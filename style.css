@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color1: rgba(216, 216, 216, 0.975);
+    --bg-color2: rgb(255, 218, 218);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* La partie Entete */
+.header {
+    min-height: 40vh;
+    padding: 20px;
+}
+.header .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.header .navBar .navG {
+    min-width: 40%;
+}
+.header .navBar .navG ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header .navBar .navD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span {
+    color: rgb(59, 213, 222);
+}
+.header .navBar .navG ul .logo {
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(59, 213, 222);
+}
+.header .navBar .navG ul li a {
+    color: black;
+    transition: 1s ease-in-out;
+    text-shadow: 0 0 12px white;
+}
+.header .navBar .navG ul li a:hover {
+    text-shadow: 0 0 78px rgb(59, 213, 222);
+    cursor: pointer;
+    border-bottom: 2px solid rgb(59, 213, 222);
+    color: rgb(59, 213, 222);
+}
+
+/* Header M */
+.header .headerM {
+    margin: 5px;
+    background-color: var(--bg-color1);
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.header .headerM .points {
+    padding: 10px;
+    margin: 10px;
+}
+.header .headerM .points div {
+    height: 20px;
+    width: 20px;
+    font-size: 2rem;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    transition: 1s ease-in-out;
+}
+.header .headerM .points div:hover {
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 30px;
+}
+.header .headerM .clock img{
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.header .headerM .nom h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+.header .headerM .nom button {
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.header .headerM .nom button a {
+    color: black;
+}
+
+/* La partie de la mise en place de l'horloge */
+
+
+
+/* La cloture de la mise en place de l'horloge */
+
+/* section 1*/
+.section1 {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-color2);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section1 div img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.section1 .sect1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section1 .sect1 div {
+    margin: 5px;
+}
+/* section 2 */
+.section2 {
+    min-height: 25vh;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section2 .sect2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.section2 .sect2 {
+    width: 300px;
+    height: 300px;
+    background-color: var(--bg-color1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section2 .sect2 p {
+    padding: 15px;
+}
+/* Section 3 */
+.section3 {
+    min-height: 10vh;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section3 .sect3 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.section3 .sect3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-color2);
+    margin: 5px;
+    padding: 10px;
+}
+.section3 .sect3 .text h5, p, span {
+    padding: 5px;
+}
+.section3 .sect3 .text h5 {
+    font-size: 1.2rem;
+}
+/* section 4 */
+.section4 {
+    min-height: 10px;
+    padding: 30px;
+    background-color: var(--bg-color1);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section4 img {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.section4 .text4 h2, p, span {
+    padding: 10px;
+}
+.section4 .text4 h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.section4 .text4 button {
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+body h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin: 20px;
+}
+/* section 5 */
+.section5  {
+    min-height: 20vh;
+    margin: 5px;
+    padding: 10px;
+}
+.section5 h1 {
+    font-size: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-shadow: 1px 2px 12px burlywood;
+}
+.section5 .content5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section5 .content5 .cont5 {
+    background-color: var(--bg-color2);
+    width: 200px;
+    min-height: 300px;
+    margin: 0px;
+    padding: 10px;
+}
+.section5 .content5 .cont5 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer {
+    background-color: var(--bg-color1);
+    padding: 20px;
+    min-height: 20vh;
+}
+.footer  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
